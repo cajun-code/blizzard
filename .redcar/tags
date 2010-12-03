@@ -1,11 +1,16 @@
-1291289491
+1291379054
 Blizzard	/home/alley/Projects/blizzard/lib/blizzard.rb	module Blizzard
 Blizzard	/home/alley/Projects/blizzard/lib/blizzard/version.rb	module Blizzard
 BlizzardApp	/home/alley/Projects/blizzard/lib/blizzard.rb	  class BlizzardApp 
-FILE_PATH	/home/alley/Projects/blizzard/lib/blizzard.rb	    FILE_PATH =
+FILE_PATH	/home/alley/Projects/blizzard/lib/blizzard.rb	  FILE_PATH =
+Flake	/home/alley/Projects/blizzard/lib/blizzard.rb	  class Flake
 SCREEN_HEIGHT	/home/alley/Projects/blizzard/lib/blizzard.rb	    SCREEN_HEIGHT =
 SCREEN_WIDTH	/home/alley/Projects/blizzard/lib/blizzard.rb	    SCREEN_WIDTH =
 VERSION	/home/alley/Projects/blizzard/lib/blizzard/version.rb	  VERSION =
 draw	/home/alley/Projects/blizzard/lib/blizzard.rb	    def draw
+draw	/home/alley/Projects/blizzard/lib/blizzard.rb	    def draw
 initialize	/home/alley/Projects/blizzard/lib/blizzard.rb	    def initialize()
+initialize	/home/alley/Projects/blizzard/lib/blizzard.rb	    def initialize(window)
+reset	/home/alley/Projects/blizzard/lib/blizzard.rb	    def reset
+update	/home/alley/Projects/blizzard/lib/blizzard.rb	    def update
 update	/home/alley/Projects/blizzard/lib/blizzard.rb	    def update
