@@ -28,11 +28,11 @@ module Blizzard
     SCREEN_HEIGHT = 480
     RESET = 100000
     def initialize()
-      super(SCREEN_WIDTH, SCREEN_HEIGHT, false)
-      self.caption = "Blizzard attack"
+      super(SCREEN_WIDTH, SCREEN_HEIGHT, true)
+      self.caption = "Holiday message"
       @flakes = []
       reset
-      
+      @text_image = Gosu::Image.from_text(self, "Merry\nChristmas", "Arial", 90, 5, 300,:center )
     end
     def update
       @counter += 1
@@ -55,12 +55,20 @@ module Blizzard
       @flakes.each do |flake|
         flake.draw
       end
+      @text_image.draw(
+        (SCREEN_WIDTH - @text_image.width)/2 ,
+        (SCREEN_HEIGHT - @text_image.height)/2,4, 1, 1, Gosu::Color::RED)
     end
     def reset
       @counter = 0
       @speed = 200
       @step = 25
     end
+    
+    def button_down id
+      close if id == Gosu::KbEscape
+    end
+    
   end
   
 end
